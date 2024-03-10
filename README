@@ -2,7 +2,7 @@
 RpvBayeS 1.0.0
 ================
 
- This is the release of RpvBayeS 1.0.0, a sampler of SUSY models 
+ This is the release of RpvBayesScan version 1.0.0, a sampler of SUSY models 
  using both Bayesian/Likelihood based statistics <http://www.superbayes.org>.
 
 BUILD AND INSTALL
