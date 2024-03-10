@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH -p batch             # thinnodes
+#SBATCH -J test              # Job name
+#SBATCH -o job.%j.out        # Name of stdout output file (%j expands to jobId)
+#SBATCH -N 15                # Total number of nodes requested
+#SBATCH -n 120               # Total number of mpi tasks requested
+##!SBATCH -t 100:00:00       # Run time (hh:mm:ss) - 1.5 hours
+
+## Launch MPI-based executable
+## Set here the path to the main directory fo the program
+
+cd path/RpvBayeS5.0.0 
+
+## To run the code
+mpirun ./rpv.x inifiles/SampleIniFile_sbottomlsp.ini

@@ -1,0 +1,61 @@
+================
+RpvBayeS 1.0.0
+================
+
+ This is the release of RpvBayeS 1.0.0, a sampler of SUSY models 
+ using both Bayesian/Likelihood based statistics <http://www.superbayes.org>.
+
+BUILD AND INSTALL
+=================
+
+ Generic installation instructions are in the file INSTALL.
+
+ Before attempting to build RpVBayeS, you'll need to get LAPACK and BLAS 
+ installed. 
+
+----------
+RpvBayeS
+----------
+
+ Installation
+ ************
+
+  Download RpVBayeS, then
+
+  $ cd source
+  $ make all
+
+
+ Run
+ ***
+
+  To run the code, the user has to type: 
+
+    <directory for installed software>/rpv.x xxxx.ini 
+
+  The "ini" files are located in the "<directory for installed software>/inifiles"
+  folder. Notice that there is not need to include the full path 
+  for the ini file at running time. There is one 
+  example of "ini" file included in the distribution (SampleIniFile.ini).
+
+
+ Testing option
+ **************
+
+  Edit the file <directory for installed software>/bin/tester.f90 
+ setting the SuperBayeS parameters y run it via <directory for installed 
+ software>/bin/tester
+  
+
+ Analysis and Plotting 
+ *********************
+
+  The analysis of the chains is performed by the binary "getplots". 
+ To run it type:
+
+   <directory for installed software>/getplots xxxx.ini
+ 
+ As for the full run mode, the "ini" files are located in the 
+ "<directory for installed software>/sbini" folder. Notice 
+ that it requires a specific "ini" file for the analysis. There is one 
+ example of "ini" file included in the distribution (GetPlotsSample.ini). 
